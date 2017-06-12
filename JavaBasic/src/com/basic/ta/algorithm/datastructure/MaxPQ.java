@@ -1,7 +1,7 @@
 package com.basic.ta.algorithm.datastructure;
 
 /** 
- * 基于堆的优先队列
+ *  基于堆的优先队列
  * 
  * 
 * @author 唐忠文
