@@ -8,5 +8,6 @@ public class TestGitHub {
 		System.out.println("继续执行添加操作。。。");
 		System.out.println("使用svn提交文件测试。。");
 		System.out.println("测试svn 提交  演示。。。");
+		System.out.println("测试svn提交");
 	}
 }
