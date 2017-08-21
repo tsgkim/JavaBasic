@@ -98,7 +98,7 @@ public class Tu_4_Switch {
 		// 字符串
 		String j = "今天是个好天气";
 
-		// 由于 char 可以自动转化为 int 所以可以使用switch
+		// jdk 1.7 可以支持String
 		switch (j) {
 		case "今天是个好天气":
 			System.out.println("今天是个好天气");
