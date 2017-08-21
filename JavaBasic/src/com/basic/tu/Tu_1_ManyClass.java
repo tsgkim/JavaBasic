@@ -2,7 +2,7 @@ package com.basic.tu;
 
 /**
  * Q:一个java类源文件能不能包含多个类（不包括内部类）？<br>
- * A: 只能有一个public 声明类
+ * A: 只能有一个public 声明类  并且public的类名必须与文件名相一致
  * 	  Tu_1_ManyClass编译之后会产生Tu_1_ManyClass.class  Tu_1_ManyClass$D.class   C.class
  * 
  * @author 涂世广
