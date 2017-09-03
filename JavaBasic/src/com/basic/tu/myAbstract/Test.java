@@ -20,4 +20,10 @@ public class Test extends AbstractAImpl {
 
 	}
 
+	@Override
+	void myAbstractMethod2() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
