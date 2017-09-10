@@ -8,14 +8,14 @@ import com.basic.tu.proxy.myStatic.impl.G3Student_girl;
 *    代理对象（G3Student_proxy）的目的是帮助核心对象（G3Student_boy / G3Student_girl）做非核心的事情。
 *    但是代理对象（G3Student_proxy）必须和核心对象（G3Student_boy / G3Student_girl）实现共同的 G3Student 接口。
 */
-public class G3Student_proxy implements G3Student {
+public class G3StudentProxy implements G3Student {
 
 	//定义一个高三学生接口 作为属性，目的是就是在处理完代理需要做的事情之后调用高三男孩或者是高三女孩需要做的核心业务，
 	//但是不是代理具体去做这些核心的事情，只是调用它们而已。    
 	private G3Student g3S;
 
 	//创建一个代理的参数为 高三学生接口 的构造函数，判断但传入的字符串为boy就构造一个高三男孩的实例，如果传入的参数为girl就构造一个高三女孩的实例。
-	public G3Student_proxy(String sex) {
+	public G3StudentProxy(String sex) {
 		if ("boy".equals(sex)) {
 			g3S = new G3Student_boy();
 		} else if ("girl".equals(sex)) {

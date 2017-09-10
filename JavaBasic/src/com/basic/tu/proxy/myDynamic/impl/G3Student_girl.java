@@ -1,6 +1,6 @@
-package com.basic.tu.proxy.myStatic.impl;
+package com.basic.tu.proxy.myDynamic.impl;
 
-import com.basic.tu.proxy.myStatic.G3Student;
+import com.basic.tu.proxy.myDynamic.G3Student;
 
 //定义一个高三女孩的类（目标对象、核心对象、target对象），实现了高三学生的接口。
 public class G3Student_girl implements G3Student {
