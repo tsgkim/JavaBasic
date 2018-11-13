@@ -33,7 +33,8 @@ public class Tu_5_Operator {
 		System.out.println("60通过~结果为：" + (~A));
 		System.out.println("60通过<<结果为：" + (A << 2));
 		System.out.println("60通过>>结果为：" + (A >> 2));
-		System.out.println("60通过>>>结果为：" + (A >> 2));
+        System.out.println("60通过 >> 1结果为：" + (A >> 1));
+        System.out.println("60通过>>>结果为：" + (A >> 2));
 		System.out.println("60通过>>>结果为：" + (A >>> 2));
 	}
 
