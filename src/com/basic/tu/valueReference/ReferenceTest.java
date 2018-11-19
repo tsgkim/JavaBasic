@@ -1,4 +1,4 @@
-package com.basic.tu.ValueReference;
+package com.basic.tu.valueReference;
 
 import me.andpay.ti.util.JSON;
 import org.junit.Test;
