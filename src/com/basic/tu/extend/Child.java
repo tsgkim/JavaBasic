@@ -9,7 +9,8 @@ public class Child extends Parent {
 	//		System.out.println("我是人");
 	//	}
 
-	public void testParent() {
-
+	@Override
+    public void testParent() {
+        System.out.println("我是testChild");
 	}
 }

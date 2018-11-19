@@ -21,4 +21,15 @@ public class Parent {
 	private void testParent2() {
 		System.out.println("我是testParent2");
 	}
+
+	public static void main(String[] args) {
+
+        Parent parent = new Parent();
+        parent.testParent();
+
+        Parent child = new Child();
+        child.testParent();
+
+    }
+
 }
