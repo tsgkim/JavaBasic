@@ -3,6 +3,12 @@ package com.basic.tu.proxy.myDynamic.handler;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * 基于 jdk 动态代理
+ *
+ * @author: shiguang.tu
+ * @create: 2018/12/3 11:49 PM
+ */
 public class G3StudentHandler implements InvocationHandler {
 
 	/**

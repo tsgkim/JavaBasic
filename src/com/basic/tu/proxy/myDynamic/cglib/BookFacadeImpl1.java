@@ -7,6 +7,8 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
+ * 基于 cglib 动态代理
+ *
  * @author: shiguang.tu
  * @create: 2018/12/3 11:41 PM
  */
