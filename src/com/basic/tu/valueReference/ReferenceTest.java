@@ -12,7 +12,7 @@ import org.junit.Test;
 public class ReferenceTest {
 
     private String name;
-    private int age;
+    private Integer age;
 
     /**
      * test2 = test1 之后，改变任何一个对象的属性值，都会互相改变
@@ -36,6 +36,23 @@ public class ReferenceTest {
         System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
         System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
 
+        //test1 = new ReferenceTest();
+        //System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
+        //System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+
+        //test1 = new ReferenceTest();
+        //test1.setName("赵六");
+        //test1.setAge(15);
+        //System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
+        //System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+
+        ReferenceTest test3 = new ReferenceTest();
+        test3.setName("赵六");
+        test3.setAge(15);
+        test1 = test3;
+        System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
+        System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+
     }
 
     public String getName() {
@@ -46,11 +63,11 @@ public class ReferenceTest {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }
