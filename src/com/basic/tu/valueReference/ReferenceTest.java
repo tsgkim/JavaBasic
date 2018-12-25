@@ -1,7 +1,7 @@
 package com.basic.tu.valueReference;
 
-import me.andpay.ti.util.JSON;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 /**
  * 测试引用传递问题
@@ -23,35 +23,23 @@ public class ReferenceTest {
         ReferenceTest test1 = new ReferenceTest();
         test1.setName("张三");
         test1.setAge(23);
-        System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
-
 
         ReferenceTest test2 = test1;
+        Assertions.assertEquals(test2.toString(), test1.toString());
 
-        System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
         test1.setName("李四");
-        System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+        Assertions.assertEquals("李四", test2.getName());
 
         test2.setName("王五");
-        System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
-        System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
-
-        //test1 = new ReferenceTest();
-        //System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
-        //System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
-
-        //test1 = new ReferenceTest();
-        //test1.setName("赵六");
-        //test1.setAge(15);
-        //System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
-        //System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+        Assertions.assertEquals("王五", test1.getName());
 
         ReferenceTest test3 = new ReferenceTest();
         test3.setName("赵六");
         test3.setAge(15);
         test1 = test3;
-        System.out.println(String.format("test1=%s", JSON.getDefault().toJSONString(test1)));
-        System.out.println(String.format("test2=%s", JSON.getDefault().toJSONString(test2)));
+        Assertions.assertEquals(test1.toString(), test3.toString());
+        Assertions.assertNotEquals(test1.toString(), test2.toString());
+        Assertions.assertEquals("王五", test2.getName());
 
     }
 
