@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BAS_ITEM_SERVICE_RANGE_ID" type="xs:string"/>
+  <xs:element name="CREATE_TIME" type="xs:string"/>
+  <xs:element name="CREATOR" type="xs:string"/>
+  <xs:element name="CUST_CODE" type="xs:string"/>
+  <xs:element name="CUST_NAME" type="xs:string"/>
+  <xs:element name="FACTORY_CODE" type="xs:string"/>
+  <xs:element name="IS_QUALITY_BEFORE" type="xs:string"/>
+  <xs:element name="ITEM_CODE" type="xs:string"/>
+  <xs:element name="ITEM_NAME" type="xs:string"/>
+  <xs:element name="LAST_MODIFYOR" type="xs:string"/>
+  <xs:element name="LAST_MODIFY_TIME" type="xs:string"/>
+  <xs:element name="PROJECT_CODE" type="xs:string"/>
+  <xs:element name="PROJECT_NAME" type="xs:string"/>
+  <xs:element name="SERVICE_MODE" type="xs:string"/>
+  <xs:element name="SUPPLIERS_CODE" type="xs:string"/>
+  <xs:element name="SUPPLIERS_NAME" type="xs:string"/>
+  <xs:element name="OPERATION" type="xs:string"/>
+  <xs:element name="XT_SUPPLYPATH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tem:BAS_ITEM_SERVICE_RANGE_ID" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:CREATE_TIME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:CREATOR" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:CUST_CODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:CUST_NAME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:FACTORY_CODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:IS_QUALITY_BEFORE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:ITEM_CODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:ITEM_NAME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:LAST_MODIFYOR" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:LAST_MODIFY_TIME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:PROJECT_CODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:PROJECT_NAME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:SERVICE_MODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:SUPPLIERS_CODE" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:SUPPLIERS_NAME" xmlns:tem="http://tempuri.org/"/>
+        <xs:element ref="tem:OPERATION" xmlns:tem="http://tempuri.org/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tem:XT_SUPPLYPATH" xmlns:tem="http://tempuri.org/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendSupplyPathToSnc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tem:paths" xmlns:tem="http://tempuri.org/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

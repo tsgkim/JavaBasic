@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <int:sendSupplyPathToSnc xmlns:int="http://tempuri.org/">
+            <int:paths>
+                <int:XT_SUPPLYPATH>
+                    <int:BAS_ITEM_SERVICE_RANGE_ID>606cce711745430e8dade0072eaf9da6</int:BAS_ITEM_SERVICE_RANGE_ID>
+                    <int:CREATE_TIME>20210708091517</int:CREATE_TIME>
+                    <int:CREATOR>admin</int:CREATOR>
+                    <int:CUST_CODE>0000501138</int:CUST_CODE>
+                    <int:CUST_NAME>湖南联诚轨道装备有限公司</int:CUST_NAME>
+                    <int:FACTORY_CODE>1910</int:FACTORY_CODE>
+                    <int:IS_QUALITY_BEFORE>Y</int:IS_QUALITY_BEFORE>
+                    <int:ITEM_CODE>000000000901000351</int:ITEM_CODE>
+                    <int:ITEM_NAME>案秤100KG</int:ITEM_NAME>
+                    <int:LAST_MODIFYOR>admin</int:LAST_MODIFYOR>
+                    <int:LAST_MODIFY_TIME>20210708094118</int:LAST_MODIFY_TIME>
+                    <int:PROJECT_CODE>01-0003</int:PROJECT_CODE>
+                    <int:PROJECT_NAME>时速300公里动车组（E09）</int:PROJECT_NAME>
+                    <int:SERVICE_MODE>JIT</int:SERVICE_MODE>
+                    <int:SUPPLIERS_CODE>WU</int:SUPPLIERS_CODE>
+                    <int:SUPPLIERS_NAME>无</int:SUPPLIERS_NAME>
+                    <int:OPERATION>1(0新增，1修改)</int:OPERATION>
+                </int:XT_SUPPLYPATH>
+            </int:paths>
+        </int:sendSupplyPathToSnc>
+    </S:Body>
+</S:Envelope>
